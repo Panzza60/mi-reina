@@ -1,0 +1,104 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: rgb(52, 4, 97);
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 50px;
+
+}
+
+
+
+
+/* Título principal */
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+/* Contador */
+.contador {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.288);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(233, 3, 3, 0);
+}
+
+/* Unidades de tiempo */
+#time {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.unit {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+    min-width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.unit:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo del carrusel de imágenes */
+.coverflow-container {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.coverflow {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.coverflow img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.90s, opacity 0.5s;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.coverflow img:hover {
+    transform: scale(1.1) rotateY(10deg);
+    opacity: 1;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
