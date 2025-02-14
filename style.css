@@ -100,5 +100,21 @@ h1 {
         opacity: 1;
         transform: translateY(0);
     }
+
+
+    /* 📱 Responsive Design */
+@media (max-width: 480px) {
+    .coverflow img {
+        max-width: 150px;
+    }
+
+    .contador {
+        width: 90%;
+    }
+
+    .unit {
+        min-width: 60px;
+    }
+}
 }
 
